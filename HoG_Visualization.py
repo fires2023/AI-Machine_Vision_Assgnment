@@ -14,7 +14,7 @@ from tensorflow.keras.datasets import cifar10
 (X_train, y_train), (X_test, y_test) = cifar10.load_data()
 
 # =========================================================
-# 2. Convert RGB Images to Grayscale
+# 2. Convert RGB Images to Grayscale. It produces a 2D grayscale image for each sample.
 # =========================================================
 X_train_gray = np.array([
     np.dot(img[..., :3], [0.2989, 0.5870, 0.1140])
